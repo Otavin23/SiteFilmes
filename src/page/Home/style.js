@@ -10,6 +10,9 @@ export const Main = styled.main`
   height: 450px;
   display: flex;
   align-items: center;
+  @media (max-width: 397px){
+    height: 100%;
+  }
 `
 export const LoaderContainer = styled.div` 
   height: 100vh;
@@ -23,6 +26,13 @@ export const Container = styled.div`
   margin-left: 5rem;
   display: flex;
   align-items: center;
+  @media (max-width: 478px){
+    margin-top: 3rem;
+    width: 100%;
+    font-size: 14px;
+    width: 100%;
+    margin: 0;
+  }
   .information {
     display: grid;
     gap: 2rem;
@@ -37,6 +47,9 @@ export const Container = styled.div`
       }
     }
     .information-button {
+      @media (max-width: 404px){
+        flex-wrap: wrap;
+      }
       button {
         margin-right: 1.5rem;
         width: 170px;
@@ -47,6 +60,10 @@ export const Container = styled.div`
         font-size: 18px;
         cursor: pointer;
         transition: all 0.3s ease;
+        @media (max-width: 1278px){
+          margin-top: 0.5rem;
+        }
+
         &:hover {
           transform: scale(1.1);
           transition: all 0.5s ease-in-out;

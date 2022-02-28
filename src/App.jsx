@@ -4,6 +4,7 @@ import Home from "./page/Home/index"
 import InformationMovie from "./page/InformationMovie"
 import { FilmesProvider } from "./contexts/filmesContex"
 import { GlobalStyle } from "./styles/global"
+import Footer from "./components/footer"
 
 const urls = [
   "https://api.themoviedb.org/3/movie/popular?api_key=5f6d789565d22c8473d0ac958158e5e1",

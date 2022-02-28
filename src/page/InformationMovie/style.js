@@ -11,12 +11,20 @@ export const Main = styled.main`
     url(${(props) => props.image});
   background-repeat: no-repeat;
   background-size: cover;
-`
+  `
 export const Container = styled.div`
   background: transparent;
   width: 70%;
   height: 65vh;
   display: flex;
+  @media (max-width: 529px){
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 3rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
   gap: 2rem;
   .image{
     display: flex;
@@ -37,6 +45,9 @@ export const Container = styled.div`
     h3{
       color: #cecece;
       font-size: 50px;
+      @media (max-width: 518px){
+        font-size: 35px;
+      }
     }
     .link-button{
       button{
@@ -50,6 +61,10 @@ export const Container = styled.div`
         border: none;
         background-color: #b49e56;
         cursor: pointer;
+        @media (max-width: 518px){
+          width: 200px;
+          height: 40px;
+        }
         &:hover{
           transform: scale(1.1);
           transition: all 0.5s ease-in-out;

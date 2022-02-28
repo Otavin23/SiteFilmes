@@ -5,7 +5,6 @@ export const SecaoFilme = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300rem;
 `  
 export const Container = styled.div`
     max-width: 1440px;
@@ -30,6 +29,13 @@ export const Container = styled.div`
         img{
             width: 250px;
             height: 350px;
+            @media (max-width: 314px){
+                width: 200px;
+                height: auto;
+            }
+            @media (max-width: 695px){
+                width: 150px;
+                height: auto;
             }
         .card-title{
             margin-top: 0.8rem;
@@ -37,6 +43,7 @@ export const Container = styled.div`
                 font-size: 16px;
                 max-width: 400px;
                 color: #e7e7e7;
+
                 font-family: Arial, Helvetica, sans-serif;
                 margin-bottom: 0.5rem;
             }
@@ -50,4 +57,6 @@ export const Container = styled.div`
             color: #cacaca;
         }
     }
+}
+
 ` 
